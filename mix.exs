@@ -20,8 +20,8 @@ defmodule Markaby.Mixfile do
 
   defp deps do
     [
-      {:ex_doc, "~> 0.12", only: :dev},
-      {:mix_test_watch, "~> 0.2", only: [:dev, :test]},
+      {:ex_doc, "~> 0.16", only: :dev, runtime: false},
+      {:mix_test_watch, "~> 0.3", only: :dev, runtime: false},
     ]
   end
 
@@ -39,5 +39,5 @@ defmodule Markaby.Mixfile do
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/sanderhahn/markaby"},
     ]
-  end  
+  end
 end

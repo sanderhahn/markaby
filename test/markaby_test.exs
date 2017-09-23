@@ -33,7 +33,7 @@ defmodule MarkabyTest do
   end
 
   test "br" do
-    assert str(br) == "<br>"
+    assert str(br()) == "<br>"
   end
 
   test "nil values" do
@@ -56,7 +56,7 @@ defmodule MarkabyTest do
   end
 
   test "content block" do
-    list = 
+    list =
       content do
         "one"
         "two"
